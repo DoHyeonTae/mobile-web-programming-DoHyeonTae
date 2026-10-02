@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>도현태 이력서</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 헤더 영역 -->
+  <header>
+    <h1>DO HYEONTAE</h1>
+    <p>미래를 주도할 융합전자공학 엔지니어</p>
+  </header>
+
+  <!-- 네비게이션 영역 -->
+  <nav>
+    <a href="#about">인적사항</a>
+    <a href="#experience">경험 및 프로젝트</a>
+    <a href="#volunteer">봉사활동</a>
+  </nav>
+
+  <!-- 전체 레이아웃 컨테이너 -->
+  <div class="container">
+    
+    <!-- 좌측 기본 정보 패널 -->
+    <aside class="left-panel" id="about">
+      <figure>
+        <img src="profile.jpg" alt="DO HYEONTAE 사진" class="profile-img">
+        <figcaption>경상국립대 융합전자공학부 4학년</figcaption>
+      </figure>
+
+      <table>
+        <caption>기본 정보</caption>
+        <tbody>
+          <tr>
+            <th>생년월일</th>
+            <td>2002. 05. 08</td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td><a href="mailto:miracle-do@naver.com">miracle-do@naver.com</a></td>
+          </tr>
+          <tr>
+            <th>전공</th>
+            <td>전자공학전공</td>
+          </tr>
+          <tr>
+            <th>어학(토익)</th>
+            <td>805점</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+
+    <!-- 우측 메인 콘텐츠 패널 -->
+    <section class="main-panel">
+      
+      <article id="experience">
+        <h2>경험 및 프로젝트 사항</h2>
+
+        <!-- 프로젝트 1: 드론용 ESC H/W 설계 -->
+        <div class="card">
+          <h3>드론용 ESC(전자변속기) H/W 설계 및 펌웨어 포팅</h3>
+          <p>KiCad를 활용한 하드웨어 설계 및 펌웨어 제어 실무 과정 수료</p>
+          <ul>
+            <li><strong>회로 설계:</strong> KiCad를 활용하여 모터 제어 및 전원부 회로도(Schematic) 작성</li>
+            <li><strong>PCB 아트웍:</strong> 부품 배치 및 라우팅을 포함한 PCB Artwork 설계 수행</li>
+            <li><strong>펌웨어:</strong> 설계한 보드에 맞춘 펌웨어 포팅 및 동작 검증 완료</li>
+          </ul>
+          <!-- 첨부된 이미지 활용 -->
+          <div class="project-images">
+            <figure>
+              <img src="회로.png" alt="ESC 회로도 설계">
+              <figcaption>ESC 회로도 (Schematic)</figcaption>
+            </figure>
+            <figure>
+              <img src="pcb2.png" alt="ESC PCB 3D 뷰 1">
+              <figcaption>PCB 3D 뷰 (상단)</figcaption>
+            </figure>
+            <figure>
+              <img src="pcb1.png" alt="ESC PCB 3D 뷰 2">
+              <figcaption>PCB 3D 뷰 (하단)</figcaption>
+            </figure>
+          </div>
+        </div>
+        
+        <!-- 프로젝트 2: AI 앱 개발 -->
+        <div class="card">
+          <h3>AI 웹 애플리케이션 기획 및 개발</h3>
+          <ul>
+            <li>
+              <strong>농업 종사자 온열질환 경고 서비스 'HeatCare'</strong> <a href="https://heatcare-app-ten.vercel.app/" target="_blank">[웹사이트 방문]</a>
+              <p>2026 Campus AX-Ton 해커톤 참여작. 경상남도 농업 종사자를 타겟으로 하여, AI 데이터를 기반으로 폭염 및 온열질환 위험을 사전에 경고하고 안전을 관리할 수 있도록 돕는 웹 서비스 기획 및 프로토타입 구현.</p>
+            </li>
+            <li>
+              <strong>3D 프린터 최적화 MVP</strong> <a href="https://3d-printer-optimizer-mvp.streamlit.app/" target="_blank">[웹사이트 방문]</a>
+              <p>Streamlit 프레임워크를 활용하여 3D 프린터의 출력 프로세스를 최적화하고 사용자 편의성을 높이는 MVP(Minimum Viable Product) 웹 애플리케이션 개발.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 프로젝트 3: 미래차 기초과정 -->
+        <div class="card">
+          <h3>자동차 부품, 전장, 미래차 기초과정</h3>
+          <p>하드웨어 결선, 모터 제어 및 회로 설계 심화 학습</p>
+          <ul>
+            <li><strong>BMS 및 전원 설계:</strong> 3S 18650 배터리 팩 구성, 다중 셀 전압 감시(B+/B1/B2/B-) 및 퓨즈 보호 회로 결선</li>
+            <li><strong>BLDC 모터 제어:</strong> SimpleFOC Shield(v3.2) 및 Arduino UNO를 활용한 3상 모터 구동 시스템 구축</li>
+            <li><strong>피드백 및 펌웨어 제어:</strong> AS5600 자기 인코더를 이용한 회전자 위치 피드백(FOC) 제어 및 가상 MCU 시뮬레이터 환경을 활용한 임베디드 C 프로그래밍(PWM 제어, 실시간 레지스터 디버깅) 수행</li>
+          </ul>
+        </div>
+
+        <!-- 프로젝트 4: 학부 연구원 및 PSpice 세미나 (새로 분리된 항목) -->
+        <div class="card">
+          <h3>반도체소부장컨소시엄 연구과제 학생연구원 및 스터디</h3>
+          <p>반도체 소재 기반 가스센서용 저전력 전원회로 설계 과제 참여[cite: 302, 304]</p>
+          <ul>
+            <li><strong>회로 설계 스터디:</strong> 학부 연구 과정의 일환으로 주간 PSpice 세미나에 학생 연구원으로 성실히 참석하여, 회로 시뮬레이션 활용법 및 기초 전원 회로 설계 역량을 함양함[cite: 302, 304].</li>
+          </ul>
+        </div>
+
+        <!-- 프로젝트 5: 캡스톤 디자인 -->
+        <div class="card">
+          <h3>졸업 작품 (Capstone Design)</h3>
+          <details>
+            <summary>AI 기반 야생동물 탐지 및 추적 레이저 터렛 상세 보기</summary>
+            <p>YOLOv8 모델을 활용한 야생동물 객체 실시간 인식 기능 구현. Raspberry Pi와 Arduino 간의 시리얼 통신을 구축하고, PID 제어 알고리즘을 적용한 팬틸트 모터를 통해 동물을 정밀하게 추적하는 레이저 트래킹 시스템 개발.</p>
+          </details>
+        </div>
+      </article>
+
+      <article id="volunteer">
+        <h2>봉사활동 경력 (총 13회, 54시간)</h2>
+        <ul class="volunteer-list">
+          <li><strong>상담 및 멘토링:</strong> 위더스 소속으로 동진초등학교 학생 대상 정서지원 멘토링 및 관련 회의 진행</li>
+          <li><strong>보건 및 의료:</strong> 치매예방체조 및 치매파트너 플러스 교육 이수, 진주시보건소 치매안심센터 주관 '치매극복의 날' 행사 안전관리 및 체험부스 운영</li>
+          <li><strong>주거환경 및 생태계 보호:</strong> 봉원중학교 나라사랑 벽화 조성, 망경동 벽화 봉사, 쓰레기 분리수거 및 동식물 보호 활동</li>
+          <li><strong>행사 운영 보조:</strong> 진주시 청년의 날 행사 운영 보조</li>
+        </ul>
+      </article>
+      
+    </section>
+  </div>
+
+  <!-- 푸터 영역 -->
+  <footer>
+    <div class="contact-form">
+      <form action="#" method="get">
+        <label for="visitor-email">이력서 관련 문의 남기기: </label>
+        <input type="email" id="visitor-email" placeholder="이메일 주소">
+        <input type="submit" value="전송">
+      </form>
+    </div>
+    <p>&copy; 2026 DO HYEONTAE. All rights reserved.</p>
+  </footer>
+</body>
+</html>
